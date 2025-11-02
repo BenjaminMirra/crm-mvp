@@ -1,0 +1,25 @@
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f7; /* color de fondo del track */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2C3E50; /* color principal del thumb */
+  border-radius: 8px;
+  border: 2px solid #f4f4f7; /* borde para separar del track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1A242F; /* color de hover */
+}

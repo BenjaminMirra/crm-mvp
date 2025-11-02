@@ -1,0 +1,265 @@
+[
+  {
+    "id": "gas-001",
+    "categoria": "Impuestos",
+    "descripcion": "Pago Monotributo Septiembre",
+    "monto": 28000,
+    "fecha": "2025-09-20"
+  },
+  {
+    "id": "gas-002",
+    "categoria": "Software",
+    "descripcion": "Suscripción Figma",
+    "monto": 15000,
+    "fecha": "2025-09-05"
+  },
+  {
+    "id": "gas-003",
+    "categoria": "Servicios",
+    "descripcion": "Pago Internet",
+    "monto": 12000,
+    "fecha": "2025-09-10"
+  },
+  {
+    "id": "gas-004",
+    "categoria": "Impuestos",
+    "descripcion": "Pago IIBB Septiembre",
+    "monto": 8000,
+    "fecha": "2025-09-18"
+  },
+  {
+    "id": "gas-005",
+    "categoria": "Impuestos",
+    "descripcion": "Pago Monotributo Octubre",
+    "monto": 28000,
+    "fecha": "2025-10-20"
+  },
+  {
+    "id": "gas-006",
+    "categoria": "Software",
+    "descripcion": "Suscripción GitHub Pro",
+    "monto": 4000,
+    "fecha": "2025-10-02"
+  },
+  {
+    "id": "gas-008",
+    "categoria": "Hardware",
+    "descripcion": "Compra mouse Logitech",
+    "monto": 18000,
+    "fecha": "2025-10-12"
+  },
+  {
+    "id": "gas-009",
+    "categoria": "Capacitación",
+    "descripcion": "Curso React Avanzado",
+    "monto": 22000,
+    "fecha": "2025-10-15"
+  },
+  {
+    "id": "gas-010",
+    "categoria": "Oficina",
+    "descripcion": "Alquiler coworking Octubre",
+    "monto": 35000,
+    "fecha": "2025-10-01"
+  },
+  {
+    "id": "gas-011",
+    "categoria": "Marketing",
+    "descripcion": "Publicidad Instagram",
+    "monto": 12000,
+    "fecha": "2025-10-18"
+  },
+  {
+    "id": "gas-012",
+    "categoria": "Viajes",
+    "descripcion": "Taxi a reunión cliente",
+    "monto": 3500,
+    "fecha": "2025-10-22"
+  },
+  {
+    "id": "gas-013",
+    "categoria": "Servicios",
+    "descripcion": "Pago Luz Octubre",
+    "monto": 9000,
+    "fecha": "2025-10-10"
+  },
+  {
+    "id": "gas-014",
+    "categoria": "Hardware",
+    "descripcion": "Teclado mecánico",
+    "monto": 25000,
+    "fecha": "2025-11-02"
+  },
+  {
+    "id": "gas-015",
+    "categoria": "Capacitación",
+    "descripcion": "Workshop UX/UI",
+    "monto": 18000,
+    "fecha": "2025-11-05"
+  },
+  {
+    "id": "gas-016",
+    "categoria": "Oficina",
+    "descripcion": "Alquiler coworking Noviembre",
+    "monto": 35000,
+    "fecha": "2025-11-01"
+  },
+  {
+    "id": "gas-017",
+    "categoria": "Marketing",
+    "descripcion": "Publicidad Google Ads",
+    "monto": 20000,
+    "fecha": "2025-11-10"
+  },
+  {
+    "id": "gas-018",
+    "categoria": "Viajes",
+    "descripcion": "Pasaje micro a Córdoba",
+    "monto": 18000,
+    "fecha": "2025-11-15"
+  },
+  {
+    "id": "gas-019",
+    "categoria": "Servicios",
+    "descripcion": "Pago Agua Noviembre",
+    "monto": 7000,
+    "fecha": "2025-11-10"
+  },
+  {
+    "id": "gas-020",
+    "categoria": "Impuestos",
+    "descripcion": "Pago Monotributo Noviembre",
+    "monto": 28000,
+    "fecha": "2025-11-20"
+  },
+  {
+    "id": "gas-021",
+    "categoria": "Software",
+    "descripcion": "Suscripción Notion",
+    "monto": 5000,
+    "fecha": "2025-11-03"
+  },
+  {
+    "id": "gas-022",
+    "categoria": "Software",
+    "descripcion": "Suscripción ChatGPT Plus",
+    "monto": 8000,
+    "fecha": "2025-11-04"
+  },
+  {
+    "id": "gas-023",
+    "categoria": "Capacitación",
+    "descripcion": "Curso de Inglés",
+    "monto": 25000,
+    "fecha": "2025-11-12"
+  },
+  {
+    "id": "gas-024",
+    "categoria": "Oficina",
+    "descripcion": "Silla ergonómica",
+    "monto": 60000,
+    "fecha": "2025-11-20"
+  },
+  {
+    "id": "gas-025",
+    "categoria": "Marketing",
+    "descripcion": "Diseño de logo",
+    "monto": 10000,
+    "fecha": "2025-11-22"
+  },
+  {
+    "id": "gas-026",
+    "categoria": "Viajes",
+    "descripcion": "Uber a coworking",
+    "monto": 2500,
+    "fecha": "2025-11-25"
+  },
+  { "id": "gas-027", "categoria": "Impuestos", "descripcion": "Pago Monotributo Enero", "monto": 25000, "fecha": "2024-01-20" },
+  { "id": "gas-028", "categoria": "Software", "descripcion": "Suscripción Figma", "monto": 12000, "fecha": "2024-01-05" },
+  { "id": "gas-029", "categoria": "Servicios", "descripcion": "Pago Internet", "monto": 9000, "fecha": "2024-01-10" },
+  { "id": "gas-030", "categoria": "Oficina", "descripcion": "Alquiler coworking Enero", "monto": 30000, "fecha": "2024-01-01" },
+  { "id": "gas-031", "categoria": "Impuestos", "descripcion": "Pago Monotributo Febrero", "monto": 25000, "fecha": "2024-02-20" },
+  { "id": "gas-032", "categoria": "Software", "descripcion": "Suscripción GitHub Pro", "monto": 4000, "fecha": "2024-02-02" },
+  { "id": "gas-033", "categoria": "Servicios", "descripcion": "Pago Luz Febrero", "monto": 7000, "fecha": "2024-02-10" },
+  { "id": "gas-034", "categoria": "Oficina", "descripcion": "Alquiler coworking Febrero", "monto": 30000, "fecha": "2024-02-01" },
+  { "id": "gas-035", "categoria": "Impuestos", "descripcion": "Pago Monotributo Marzo", "monto": 25000, "fecha": "2024-03-20" },
+  { "id": "gas-036", "categoria": "Software", "descripcion": "Suscripción Notion", "monto": 5000, "fecha": "2024-03-03" },
+  { "id": "gas-037", "categoria": "Servicios", "descripcion": "Pago Agua Marzo", "monto": 6000, "fecha": "2024-03-10" },
+  { "id": "gas-038", "categoria": "Oficina", "descripcion": "Alquiler coworking Marzo", "monto": 30000, "fecha": "2024-03-01" },
+  { "id": "gas-039", "categoria": "Impuestos", "descripcion": "Pago Monotributo Abril", "monto": 25000, "fecha": "2024-04-20" },
+  { "id": "gas-040", "categoria": "Software", "descripcion": "Suscripción ChatGPT Plus", "monto": 8000, "fecha": "2024-04-04" },
+  { "id": "gas-041", "categoria": "Servicios", "descripcion": "Pago Internet Abril", "monto": 9000, "fecha": "2024-04-10" },
+  { "id": "gas-042", "categoria": "Oficina", "descripcion": "Alquiler coworking Abril", "monto": 30000, "fecha": "2024-04-01" },
+  { "id": "gas-043", "categoria": "Impuestos", "descripcion": "Pago Monotributo Mayo", "monto": 25000, "fecha": "2024-05-20" },
+  { "id": "gas-044", "categoria": "Software", "descripcion": "Suscripción Figma", "monto": 12000, "fecha": "2024-05-05" },
+  { "id": "gas-045", "categoria": "Servicios", "descripcion": "Pago Luz Mayo", "monto": 7000, "fecha": "2024-05-10" },
+  { "id": "gas-046", "categoria": "Oficina", "descripcion": "Alquiler coworking Mayo", "monto": 30000, "fecha": "2024-05-01" },
+  { "id": "gas-047", "categoria": "Impuestos", "descripcion": "Pago Monotributo Junio", "monto": 25000, "fecha": "2024-06-20" },
+  { "id": "gas-048", "categoria": "Software", "descripcion": "Suscripción GitHub Pro", "monto": 4000, "fecha": "2024-06-02" },
+  { "id": "gas-049", "categoria": "Servicios", "descripcion": "Pago Agua Junio", "monto": 6000, "fecha": "2024-06-10" },
+  { "id": "gas-050", "categoria": "Oficina", "descripcion": "Alquiler coworking Junio", "monto": 30000, "fecha": "2024-06-01" },
+  { "id": "gas-051", "categoria": "Impuestos", "descripcion": "Pago Monotributo Julio", "monto": 25000, "fecha": "2024-07-20" },
+  { "id": "gas-052", "categoria": "Software", "descripcion": "Suscripción Notion", "monto": 5000, "fecha": "2024-07-03" },
+  { "id": "gas-053", "categoria": "Servicios", "descripcion": "Pago Internet Julio", "monto": 9000, "fecha": "2024-07-10" },
+  { "id": "gas-054", "categoria": "Oficina", "descripcion": "Alquiler coworking Julio", "monto": 30000, "fecha": "2024-07-01" },
+  { "id": "gas-055", "categoria": "Impuestos", "descripcion": "Pago Monotributo Agosto", "monto": 25000, "fecha": "2024-08-20" },
+  { "id": "gas-056", "categoria": "Software", "descripcion": "Suscripción ChatGPT Plus", "monto": 8000, "fecha": "2024-08-04" },
+  { "id": "gas-057", "categoria": "Servicios", "descripcion": "Pago Luz Agosto", "monto": 7000, "fecha": "2024-08-10" },
+  { "id": "gas-058", "categoria": "Oficina", "descripcion": "Alquiler coworking Agosto", "monto": 30000, "fecha": "2024-08-01" },
+  { "id": "gas-059", "categoria": "Impuestos", "descripcion": "Pago Monotributo Septiembre", "monto": 25000, "fecha": "2024-09-20" },
+  { "id": "gas-060", "categoria": "Software", "descripcion": "Suscripción Figma", "monto": 12000, "fecha": "2024-09-05" },
+  { "id": "gas-061", "categoria": "Servicios", "descripcion": "Pago Agua Septiembre", "monto": 6000, "fecha": "2024-09-10" },
+  { "id": "gas-062", "categoria": "Oficina", "descripcion": "Alquiler coworking Septiembre", "monto": 30000, "fecha": "2024-09-01" },
+  { "id": "gas-063", "categoria": "Impuestos", "descripcion": "Pago Monotributo Octubre", "monto": 25000, "fecha": "2024-10-20" },
+  { "id": "gas-064", "categoria": "Software", "descripcion": "Suscripción GitHub Pro", "monto": 4000, "fecha": "2024-10-02" },
+  { "id": "gas-065", "categoria": "Servicios", "descripcion": "Pago Internet Octubre", "monto": 9000, "fecha": "2024-10-10" },
+  { "id": "gas-066", "categoria": "Oficina", "descripcion": "Alquiler coworking Octubre", "monto": 30000, "fecha": "2024-10-01" },
+  { "id": "gas-067", "categoria": "Impuestos", "descripcion": "Pago Monotributo Noviembre", "monto": 25000, "fecha": "2024-11-20" },
+  { "id": "gas-068", "categoria": "Software", "descripcion": "Suscripción Notion", "monto": 5000, "fecha": "2024-11-03" },
+  { "id": "gas-069", "categoria": "Servicios", "descripcion": "Pago Luz Noviembre", "monto": 7000, "fecha": "2024-11-10" },
+  { "id": "gas-070", "categoria": "Oficina", "descripcion": "Alquiler coworking Noviembre", "monto": 30000, "fecha": "2024-11-01" },
+  { "id": "gas-071", "categoria": "Impuestos", "descripcion": "Pago Monotributo Diciembre", "monto": 25000, "fecha": "2024-12-20" },
+  { "id": "gas-072", "categoria": "Software", "descripcion": "Suscripción ChatGPT Plus", "monto": 8000, "fecha": "2024-12-04" },
+  { "id": "gas-073", "categoria": "Servicios", "descripcion": "Pago Agua Diciembre", "monto": 6000, "fecha": "2024-12-10" },
+  { "id": "gas-074", "categoria": "Oficina", "descripcion": "Alquiler coworking Diciembre", "monto": 30000, "fecha": "2024-12-01" },
+  { "id": "gas-075", "categoria": "Impuestos", "descripcion": "Pago Monotributo Enero", "monto": 27000, "fecha": "2025-01-20" },
+  { "id": "gas-076", "categoria": "Software", "descripcion": "Suscripción Figma", "monto": 14000, "fecha": "2025-01-05" },
+  { "id": "gas-077", "categoria": "Servicios", "descripcion": "Pago Internet", "monto": 11000, "fecha": "2025-01-10" },
+  { "id": "gas-078", "categoria": "Oficina", "descripcion": "Alquiler coworking Enero", "monto": 32000, "fecha": "2025-01-01" },
+  { "id": "gas-079", "categoria": "Impuestos", "descripcion": "Pago Monotributo Febrero", "monto": 27000, "fecha": "2025-02-20" },
+  { "id": "gas-080", "categoria": "Software", "descripcion": "Suscripción GitHub Pro", "monto": 4000, "fecha": "2025-02-02" },
+  { "id": "gas-081", "categoria": "Servicios", "descripcion": "Pago Luz Febrero", "monto": 8000, "fecha": "2025-02-10" },
+  { "id": "gas-082", "categoria": "Oficina", "descripcion": "Alquiler coworking Febrero", "monto": 32000, "fecha": "2025-02-01" },
+  { "id": "gas-083", "categoria": "Impuestos", "descripcion": "Pago Monotributo Marzo", "monto": 27000, "fecha": "2025-03-20" },
+  { "id": "gas-084", "categoria": "Software", "descripcion": "Suscripción Notion", "monto": 6000, "fecha": "2025-03-03" },
+  { "id": "gas-085", "categoria": "Servicios", "descripcion": "Pago Agua Marzo", "monto": 7000, "fecha": "2025-03-10" },
+  { "id": "gas-086", "categoria": "Oficina", "descripcion": "Alquiler coworking Marzo", "monto": 32000, "fecha": "2025-03-01" },
+  { "id": "gas-087", "categoria": "Impuestos", "descripcion": "Pago Monotributo Abril", "monto": 27000, "fecha": "2025-04-20" },
+  { "id": "gas-088", "categoria": "Software", "descripcion": "Suscripción ChatGPT Plus", "monto": 9000, "fecha": "2025-04-04" },
+  { "id": "gas-089", "categoria": "Servicios", "descripcion": "Pago Internet Abril", "monto": 11000, "fecha": "2025-04-10" },
+  { "id": "gas-090", "categoria": "Oficina", "descripcion": "Alquiler coworking Abril", "monto": 32000, "fecha": "2025-04-01" },
+  { "id": "gas-091", "categoria": "Impuestos", "descripcion": "Pago Monotributo Mayo", "monto": 27000, "fecha": "2025-05-20" },
+  { "id": "gas-092", "categoria": "Software", "descripcion": "Suscripción Figma", "monto": 14000, "fecha": "2025-05-05" },
+  { "id": "gas-093", "categoria": "Servicios", "descripcion": "Pago Luz Mayo", "monto": 8000, "fecha": "2025-05-10" },
+  { "id": "gas-094", "categoria": "Oficina", "descripcion": "Alquiler coworking Mayo", "monto": 32000, "fecha": "2025-05-01" },
+  { "id": "gas-095", "categoria": "Impuestos", "descripcion": "Pago Monotributo Junio", "monto": 27000, "fecha": "2025-06-20" },
+  { "id": "gas-096", "categoria": "Software", "descripcion": "Suscripción GitHub Pro", "monto": 4000, "fecha": "2025-06-02" },
+  { "id": "gas-097", "categoria": "Servicios", "descripcion": "Pago Agua Junio", "monto": 7000, "fecha": "2025-06-10" },
+  { "id": "gas-098", "categoria": "Oficina", "descripcion": "Alquiler coworking Junio", "monto": 32000, "fecha": "2025-06-01" },
+  { "id": "gas-099", "categoria": "Impuestos", "descripcion": "Pago Monotributo Julio", "monto": 27000, "fecha": "2025-07-20" },
+  { "id": "gas-100", "categoria": "Software", "descripcion": "Suscripción Notion", "monto": 6000, "fecha": "2025-07-03" },
+  { "id": "gas-101", "categoria": "Servicios", "descripcion": "Pago Internet Julio", "monto": 11000, "fecha": "2025-07-10" },
+  { "id": "gas-102", "categoria": "Oficina", "descripcion": "Alquiler coworking Julio", "monto": 32000, "fecha": "2025-07-01" },
+  { "id": "gas-103", "categoria": "Impuestos", "descripcion": "Pago Monotributo Agosto", "monto": 27000, "fecha": "2025-08-20" },
+  { "id": "gas-104", "categoria": "Software", "descripcion": "Suscripción ChatGPT Plus", "monto": 9000, "fecha": "2025-08-04" },
+  { "id": "gas-105", "categoria": "Servicios", "descripcion": "Pago Luz Agosto", "monto": 8000, "fecha": "2025-08-10" },
+  { "id": "gas-106", "categoria": "Oficina", "descripcion": "Alquiler coworking Agosto", "monto": 32000, "fecha": "2025-08-01" },
+  { "id": "gas-107", "categoria": "Impuestos", "descripcion": "Pago Monotributo Septiembre", "monto": 27000, "fecha": "2025-09-20" },
+  { "id": "gas-108", "categoria": "Software", "descripcion": "Suscripción Figma", "monto": 14000, "fecha": "2025-09-05" },
+  { "id": "gas-109", "categoria": "Servicios", "descripcion": "Pago Agua Septiembre", "monto": 7000, "fecha": "2025-09-10" },
+  { "id": "gas-110", "categoria": "Oficina", "descripcion": "Alquiler coworking Septiembre", "monto": 32000, "fecha": "2025-09-01" },
+  { "id": "gas-111", "categoria": "Impuestos", "descripcion": "Pago Monotributo Octubre", "monto": 27000, "fecha": "2025-10-20" },
+  { "id": "gas-112", "categoria": "Software", "descripcion": "Suscripción GitHub Pro", "monto": 4000, "fecha": "2025-10-02" },
+  { "id": "gas-113", "categoria": "Servicios", "descripcion": "Pago Internet Octubre", "monto": 11000, "fecha": "2025-10-10" },
+  { "id": "gas-114", "categoria": "Oficina", "descripcion": "Alquiler coworking Octubre", "monto": 32000, "fecha": "2025-10-01" }
+]
