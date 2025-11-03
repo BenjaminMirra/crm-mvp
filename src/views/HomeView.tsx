@@ -1,4 +1,4 @@
-import FiltrosPeriodo from "../components/FiltrosPeriodo";
+// import FiltrosPeriodo from "../components/FiltrosPeriodo";
 import FiltersChips from "../components/FiltersChips";
 import KpiContainer from "../components/Kpis/KpiContainer";
 import ChartContainer from "../components/Charts/ChartContainer";

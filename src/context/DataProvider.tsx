@@ -17,6 +17,7 @@ interface DataContextType {
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useData = () => {
   const ctx = useContext(DataContext);
   if (!ctx) throw new Error("useData debe usarse dentro de DataProvider");

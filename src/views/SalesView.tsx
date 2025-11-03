@@ -1,8 +1,7 @@
 import { Typography } from "@mui/material";
 import { useData } from "../context/DataProvider";
-
 export default function SalesView() {
-  const { ingresosFiltrados, loading, error } = useData();
+  const { loading, error } = useData();
   return (
     <>
       <Typography variant="h4" sx={{ mt: 4, mb: 2, px: 4 }}>Ventas</Typography>
