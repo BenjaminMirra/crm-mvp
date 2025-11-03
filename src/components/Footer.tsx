@@ -1,4 +1,5 @@
-import { Stack, Toolbar, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,11 +13,21 @@ const Footer = () => {
         alignItems: "center",
       }}
     >
-      <Toolbar>
-        <Typography variant="body2" color="text.secondary" align="center">
+      <Link to="https://mirrabenjamin.netlify.app/" target="_blank" style={{ textDecoration: "none" }}>
+        <Typography
+          sx={{
+            fontSize: 12,
+            py: 0.5,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
+          }}
+          color="text.secondary"
+        >
           Desarrollado web realizado por Mirra Benjamín
         </Typography>
-      </Toolbar>
+      </Link>
     </Stack>
   );
 };
