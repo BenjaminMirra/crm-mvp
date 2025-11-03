@@ -1,7 +1,7 @@
 // import FiltrosPeriodo from "../components/FiltrosPeriodo";
 import FiltersChips from "../components/FiltersChips";
-import KpiContainer from "../components/Kpis/KpiContainer";
-import ChartContainer from "../components/Charts/ChartContainer";
+import HomeKpiContainer from "../components/Kpis/HomeKpiContainer";
+import HomeChartContainer from "../components/Charts/HomeChartContainer";
 import { Typography, Stack } from "@mui/material";
 import { useData } from "../context/DataProvider";
 
@@ -52,12 +52,12 @@ export default function HomeView() {
             width: "100%",
           }}
         >
-          <KpiContainer
+          <HomeKpiContainer
             marginTop={selectedAnios.length > 0 || selectedMeses.length > 0}
             ingresos={ingresosFiltrados}
             gastos={gastosFiltrados}
           />
-          <ChartContainer
+          <HomeChartContainer
             ingresos={ingresosFiltrados}
             gastos={gastosFiltrados}
           />

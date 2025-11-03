@@ -7,7 +7,7 @@ import GastosPieChart from "./GastosPieChart";
 import RentabilidadClienteChart from "./RentabilidadClienteChart";
 import type { ChartContainerProps } from "../../types/types";
 
-const ChartContainer = ({ ingresos, gastos }: ChartContainerProps) => {
+const HomeChartContainer = ({ ingresos, gastos }: ChartContainerProps) => {
   const gastosPorCategoria = useMemo(() => {
     const categorias: { [key: string]: number } = {};
     gastos.forEach((gasto) => {
@@ -202,4 +202,4 @@ const ChartContainer = ({ ingresos, gastos }: ChartContainerProps) => {
   );
 };
 
-export default ChartContainer;
+export default HomeChartContainer;

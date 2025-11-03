@@ -3,7 +3,7 @@ import { useMemo } from "react";
 import KpiCard from "./KpiCard";
 import type { KpiContainerProps } from "../../types/types";
 
-const KpiContainer = ({ marginTop, ingresos, gastos }: KpiContainerProps) => {
+const HomeKpiContainer = ({ marginTop, ingresos, gastos }: KpiContainerProps) => {
   const resumenFinanciero = useMemo(() => {
     const totalIngresos = ingresos.reduce((acc, curr) => acc + curr.monto, 0);
     const totalGastos = gastos.reduce((acc, curr) => acc + curr.monto, 0);
@@ -76,4 +76,4 @@ const KpiContainer = ({ marginTop, ingresos, gastos }: KpiContainerProps) => {
   );
 };
 
-export default KpiContainer;
+export default HomeKpiContainer;
