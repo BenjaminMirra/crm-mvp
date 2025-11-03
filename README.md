@@ -1,73 +1,57 @@
-# React + TypeScript + Vite
+# CRM MVP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dashboard financiero interactivo (MVP) para gestión y visualización de ingresos y gastos.
 
-Currently, two official plugins are available:
+## Tecnologías principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React + TypeScript
+- Vite
+- Material UI (MUI)
+- Highcharts
+- React Router DOM
 
-## React Compiler
+## Características
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Visualización de KPIs y gráficos de ingresos/gastos
+- Filtros por año y mes
+- Navegación por tabs (Home, Ventas, Gastos)
+- Layout con header y footer fijos
+- Estado global con Context API (DataProvider)
+- Página 404 amigable
 
-## Expanding the ESLint configuration
+## Instalación y uso
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/BenjaminMirra/crm-mvp.git
+   cd crm-mvp
+   ```
+2. Instala dependencias:
+   ```bash
+   npm install
+   ```
+3. Inicia el entorno de desarrollo:
+   ```bash
+   npm run dev
+   ```
+4. Accede a la app en [http://localhost:5173](http://localhost:5173)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Estructura principal
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- `src/`
+  - `App.tsx` — Rutas principales
+  - `context/DataProvider.tsx` — Proveedor global de datos y filtros
+  - `components/` — Componentes reutilizables (filtros, header, footer, charts, KPIs)
+  - `views/` — Vistas principales (Home, Ventas, Gastos, 404, Layout)
+  - `public/data/` — Datos mock en JSON (`ingresos.json`, `gastos.json`)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Próximos pasos
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Agregar vistas de detalle (clientes, reportes, etc.)
+- Autenticación y roles
+- Integración con backend/API real
+- Exportación de reportes
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Desarrollado por Mirra Benjamín
