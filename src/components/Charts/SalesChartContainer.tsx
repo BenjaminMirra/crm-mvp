@@ -3,8 +3,8 @@ import { theme } from "../../theme";
 import { useMemo } from "react";
 import ChartCard from "./ChartCard";
 import HorasPorClienteChart from "./Sales/HorasPorClienteChart";
-import RentabilidadClienteChart from "./Sales/RentabilidadClienteChart";
 import type { Ingreso } from "../../types/types";
+import VentasEspecificosChart from "./Sales/VentasEspecificosChart";
 import VentasPorMesChart from "./Sales/VentasPorMesChart";
 import VentasPorServicioPieChart from "./Sales/VentasPorServicioPieChart";
 
@@ -63,39 +63,6 @@ export default function SalesChartContainer({
     return { categories, series };
   }, [ingresos]);
 
-  const rentabilidadPorCliente = useMemo(() => {
-    const clientes: { [key: string]: { monto: number; horas: number } } = {};
-    ingresos.forEach((ingreso) => {
-      if (!clientes[ingreso.cliente]) {
-        clientes[ingreso.cliente] = { monto: 0, horas: 0 };
-      }
-      clientes[ingreso.cliente].monto += ingreso.monto;
-      clientes[ingreso.cliente].horas += ingreso.horasInvertidas;
-    });
-
-    const rentabilidad = Object.entries(clientes)
-      .map(([nombre, datos]) => {
-        const tarifaHora = datos.horas > 0 ? datos.monto / datos.horas : 0;
-        return {
-          name: nombre,
-          y: Math.round(tarifaHora),
-        };
-      })
-      .sort((a, b) => b.y - a.y);
-
-    const categories = rentabilidad.map((c) => c.name);
-    const data = rentabilidad.map((c) => c.y);
-
-    const series = [
-      {
-        type: "bar" as const,
-        name: "Tarifa por Hora",
-        data: data,
-        color: theme.palette.secondary.main,
-      },
-    ];
-    return { categories, series };
-  }, [ingresos]);
   const ventasPorTipoDeServicio = useMemo(() => {
     const servicios: { [key: string]: number } = {};
     ingresos.forEach((ingreso) => {
@@ -136,6 +103,34 @@ export default function SalesChartContainer({
     return { categories, series };
   }, [ingresos]);
 
+  const ingresosEspecificos = useMemo(() => {
+    const descripciones: { [key: string]: number } = {};
+    ingresos.forEach((ingreso) => {
+      const desc = ingreso.descripcion;
+      if (!descripciones[desc]) {
+        descripciones[desc] = 0;
+      }
+      descripciones[desc] += ingreso.monto;
+    });
+
+    const ingresosOrdenados = Object.entries(descripciones)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 10);
+
+    const categories = ingresosOrdenados.map(([desc]) => desc);
+    const data = ingresosOrdenados.map(([, monto]) => monto);
+
+    const series = [
+      {
+        type: "bar" as const,
+        name: "Monto Total",
+        data,
+        color: theme.palette.warning.main,
+      },
+    ];
+    return { categories, series };
+  }, [ingresos]);
+
   return (
     <Grid container spacing={3}>
       <Grid size={{ xs: 12, sm: 12, md: 6 }}>
@@ -161,10 +156,10 @@ export default function SalesChartContainer({
         </ChartCard>
       </Grid>
       <Grid size={{ xs: 12, sm: 12, md: 6 }}>
-        <ChartCard title="Rentabilidad por Cliente ($ / Hora)">
-          <RentabilidadClienteChart
-            categories={rentabilidadPorCliente.categories}
-            series={rentabilidadPorCliente.series}
+        <ChartCard title="Top 10 Ventas Específicas">
+          <VentasEspecificosChart
+            categories={ingresosEspecificos.categories}
+            series={ingresosEspecificos.series}
           />
         </ChartCard>
       </Grid>
