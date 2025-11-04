@@ -4,6 +4,7 @@ import SalesView from "./views/SalesView";
 import ExpensesView from "./views/ExpensesView";
 import MainLayout from "./views/MainLayout";
 import NotFoundView from "./views/NotFoundView";
+
 function App() {
   return (
     <Routes>

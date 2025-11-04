@@ -1,30 +1,30 @@
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
-// Definimos la estructura de las props
-interface FacturacionClienteChartProps {
+interface RentabilidadClienteChartProps {
   categories: string[];
   series: {
     type: "bar";
     name: string;
     data: number[];
+    color: string;
   }[];
 }
 
-const FacturacionClienteChart: React.FC<FacturacionClienteChartProps> = ({
+const RentabilidadClienteChart: React.FC<RentabilidadClienteChartProps> = ({
   categories,
   series,
 }) => {
   const options: Highcharts.Options = {
     chart: {
-      type: "bar", // Gráfico de Barras horizontales
+      type: "bar",
       height: 300,
     },
     title: {
       text: "",
     },
     xAxis: {
-      categories: categories, // Eje X con los nombres de clientes
+      categories: categories,
       title: {
         text: null,
       },
@@ -32,22 +32,20 @@ const FacturacionClienteChart: React.FC<FacturacionClienteChartProps> = ({
     yAxis: {
       min: 0,
       title: {
-        text: "Facturación ($)",
+        text: "Tarifa ($ / Hora)",
         align: "high",
-      },
-      labels: {
-        overflow: "justify",
       },
     },
     tooltip: {
       valuePrefix: "$",
+      valueSuffix: " / hora",
       valueDecimals: 0,
     },
     plotOptions: {
       bar: {
         dataLabels: {
           enabled: true,
-          format: "${y:,.0f}", // Muestra el valor en la barra
+          format: "${y:,.0f} / hr",
         },
       },
     },
@@ -56,11 +54,11 @@ const FacturacionClienteChart: React.FC<FacturacionClienteChartProps> = ({
       enabled: false,
     },
     legend: {
-      enabled: false, // Ocultamos la leyenda, es obvio
+      enabled: false,
     },
   };
 
   return <HighchartsReact highcharts={Highcharts} options={options} />;
 };
 
-export default FacturacionClienteChart;
+export default RentabilidadClienteChart;

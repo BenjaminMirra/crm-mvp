@@ -38,7 +38,6 @@ export default function FiltrosPeriodo({
   onChangeAnios,
   onChangeMeses,
 }: FiltrosPeriodoProps) {
-  // Extraer años y meses únicos de los datos
   const { anios, meses } = useMemo(() => {
     const aniosSet = new Set<string>();
     const mesesSet = new Set<string>();

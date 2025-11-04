@@ -11,7 +11,6 @@ export const filtrarPorPeriodo = <T extends { fecha: string }>(
   });
 };
 
-// Utilidad para mostrar nombres de meses
 export const mesesNombres = [
   "Enero",
   "Febrero",
@@ -27,7 +26,6 @@ export const mesesNombres = [
   "Diciembre",
 ];
 
-// Formatea un número en miles y con dos decimales (ej: 1,234.56)
 export function formatMilesDecimal(value: number): string {
   if (isNaN(value)) return "-";
   return value.toLocaleString("es-AR", {

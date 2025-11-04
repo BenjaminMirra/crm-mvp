@@ -1,16 +1,18 @@
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
-// Definimos la estructura de la prop 'data' que esperamos
-// Es un array de objetos: [ { name: 'Impuestos', y: 50000 }, ... ]
-interface GastosPieChartProps {
-  data: {
-    name: string;
-    y: number;
-  }[];
+interface PieChartData {
+  name: string;
+  y: number;
 }
 
-const GastosPieChart: React.FC<GastosPieChartProps> = ({ data }) => {
+interface VentasPorServicioPieChartProps {
+  data: PieChartData[];
+}
+
+const VentasPorServicioPieChart: React.FC<VentasPorServicioPieChartProps> = ({
+  data,
+}) => {
   const options: Highcharts.Options = {
     chart: {
       type: "pie",
@@ -30,6 +32,11 @@ const GastosPieChart: React.FC<GastosPieChartProps> = ({ data }) => {
         dataLabels: {
           enabled: true,
           format: "{point.name}: {point.percentage:.1f} %",
+          distance: 10,
+          style: {
+            fontSize: "12px",
+            textOutline: "none",
+          }
         },
         showInLegend: false,
       },
@@ -37,13 +44,16 @@ const GastosPieChart: React.FC<GastosPieChartProps> = ({ data }) => {
     series: [
       {
         type: "pie",
-        name: "Monto gastado",
+        name: "Monto",
         data: data,
       },
     ],
+    credits: {
+      enabled: false,
+    },
   };
 
   return <HighchartsReact highcharts={Highcharts} options={options} />;
 };
 
-export default GastosPieChart;
+export default VentasPorServicioPieChart;

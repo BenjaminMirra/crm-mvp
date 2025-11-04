@@ -7,7 +7,6 @@ export default function SalesView() {
   const { loading, error, ingresosFiltrados, selectedAnios, selectedMeses } = useData();
   return (
     <>
-      <Typography variant="h4" sx={{ mt: 4, mb: 2, px: 4 }}>Ventas</Typography>
       {loading && <Typography>Cargando datos...</Typography>}
       {error && <Typography color="error">Error: {error}</Typography>}
       {!loading && !error && (

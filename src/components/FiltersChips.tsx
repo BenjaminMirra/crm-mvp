@@ -37,12 +37,11 @@ const FiltersChips = ({
         Limpiar filtros
       </Button>
       <Typography variant="body2" color="text.secondary">
-        Filtrando por: {/* Años */}
+        Filtrando por:
         {selectedAnios.length > 0 && (
           <>
             Año{selectedAnios.length > 1 ? "s" : ""}:{" "}
             {(() => {
-              // Obtener todos los años posibles
               const allAnios = Array.from(
                 new Set(
                   [...ingresos, ...gastos].map(
@@ -56,13 +55,11 @@ const FiltersChips = ({
             })()}
           </>
         )}
-        {/* Meses */}
         {selectedMeses.length > 0 && (
           <>
             {selectedAnios.length > 0 ? " | " : " "}
             Mes{selectedMeses.length > 1 ? "es" : ""}:{" "}
             {(() => {
-              // Obtener todos los meses posibles
               const allMeses = Array.from(
                 new Set(
                   [...ingresos, ...gastos].map(

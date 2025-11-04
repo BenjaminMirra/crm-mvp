@@ -1,8 +1,7 @@
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
-// Definimos la estructura de las props
-interface RentabilidadClienteChartProps {
+interface HorasPorClienteChartProps {
   categories: string[];
   series: {
     type: "bar";
@@ -12,20 +11,20 @@ interface RentabilidadClienteChartProps {
   }[];
 }
 
-const RentabilidadClienteChart: React.FC<RentabilidadClienteChartProps> = ({
+const HorasPorClienteChart: React.FC<HorasPorClienteChartProps> = ({
   categories,
   series,
 }) => {
   const options: Highcharts.Options = {
     chart: {
-      type: "bar", // Gráfico de Barras horizontales
+      type: "bar",
       height: 300,
     },
     title: {
       text: "",
     },
     xAxis: {
-      categories: categories, // Eje X con los nombres de clientes
+      categories: categories,
       title: {
         text: null,
       },
@@ -33,23 +32,19 @@ const RentabilidadClienteChart: React.FC<RentabilidadClienteChartProps> = ({
     yAxis: {
       min: 0,
       title: {
-        text: "Tarifa ($ / Hora)",
+        text: "Horas trabajadas",
         align: "high",
-      },
-      labels: {
-        overflow: "justify",
       },
     },
     tooltip: {
-      valuePrefix: "$",
-      valueSuffix: " / hora",
+      valueSuffix: " hs",
       valueDecimals: 0,
     },
     plotOptions: {
       bar: {
         dataLabels: {
           enabled: true,
-          format: "${y:,.0f} / hr", // Muestra el valor en la barra
+          format: "{y:,.0f} hs",
         },
       },
     },
@@ -65,4 +60,4 @@ const RentabilidadClienteChart: React.FC<RentabilidadClienteChartProps> = ({
   return <HighchartsReact highcharts={Highcharts} options={options} />;
 };
 
-export default RentabilidadClienteChart;
+export default HorasPorClienteChart;

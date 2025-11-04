@@ -1,10 +1,9 @@
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
-// Definimos la estructura de las props que esperamos
 interface FlujoCajaChartProps {
   categories: string[];
-  // Definimos el tipo de 'series' más explícitamente para TypeScript
+
   series: {
     type: "column";
     name: string;
@@ -17,23 +16,23 @@ const FlujoCajaChart: React.FC<FlujoCajaChartProps> = ({
   categories,
   series,
 }) => {
-  // Opciones de configuración para el Column Chart
+
   const options: Highcharts.Options = {
     chart: {
-      type: "column", // Gráfico de Columnas
+      type: "column",
       height: 300,
     },
     title: {
-      text: "", // Sin título, lo maneja MUI
+      text: "",
     },
     xAxis: {
-      categories: categories, // Eje X con los meses
+      categories: categories,
       crosshair: true,
     },
     yAxis: {
       min: 0,
       title: {
-        text: "Monto ($)", // Título del eje Y
+        text: "Monto ($)",
       },
     },
     tooltip: {
@@ -51,7 +50,7 @@ const FlujoCajaChart: React.FC<FlujoCajaChartProps> = ({
         borderWidth: 0,
       },
     },
-    series: series, // ¡Aquí pasamos nuestras series! (Ingresos y Gastos)
+    series: series,
     credits: {
       enabled: false,
     },

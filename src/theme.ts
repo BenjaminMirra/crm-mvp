@@ -39,7 +39,6 @@ export const theme = createTheme({
   },
 });
 
-// Tema global para Highcharts, usando los colores y fuente del theme de MUI
 export const highchartsTheme: Highcharts.Options = {
   chart: {
     backgroundColor: 'transparent',
