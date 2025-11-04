@@ -10,9 +10,8 @@ const NAV_TABS = [
 export default function NavigationTabs() {
   const navigate = useNavigate();
   const location = useLocation();
-  const currentTab = NAV_TABS.findIndex(tab => tab.path === location.pathname) !== -1
-    ? NAV_TABS.findIndex(tab => tab.path === location.pathname)
-    : 0;
+  const currentTabIndex = NAV_TABS.findIndex(tab => tab.path === location.pathname);
+  const currentTab = currentTabIndex !== -1 ? currentTabIndex : false;
 
   return (
     <Tabs
