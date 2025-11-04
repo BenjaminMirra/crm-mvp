@@ -26,3 +26,12 @@ export const mesesNombres = [
   "Noviembre",
   "Diciembre",
 ];
+
+// Formatea un número en miles y con dos decimales (ej: 1,234.56)
+export function formatMilesDecimal(value: number): string {
+  if (isNaN(value)) return "-";
+  return value.toLocaleString("es-AR", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
+}

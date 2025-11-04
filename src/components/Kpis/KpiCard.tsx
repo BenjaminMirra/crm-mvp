@@ -1,7 +1,6 @@
+import { formatMilesDecimal } from "../../utils";
 import { Paper, Typography } from "@mui/material";
 import type { KpiCardProps } from "../../types/types";
-
-
 import type { SxProps, Theme } from "@mui/material";
 
 const cardStyle: SxProps<Theme> = {
@@ -19,14 +18,14 @@ const cardStyle: SxProps<Theme> = {
   color: (theme) => theme.palette.text.primary,
 };
 
-const KpiCard = ({ titulo, valor, color = "primary" }: KpiCardProps) => {
+const KpiCard = ({ titulo, valor, color = "primary", tipo_valor = "monto" }: KpiCardProps) => {
   return (
     <Paper sx={cardStyle}>
       <Typography component="h2" variant="h6" color="primary" gutterBottom>
         {titulo}
       </Typography>
       <Typography component="p" variant="h4" color={color}>
-        ${valor.toLocaleString("es-AR")}
+        {tipo_valor === "monto" ? `$${valor.toLocaleString("es-AR")}` : formatMilesDecimal(valor)}
       </Typography>
     </Paper>
   );

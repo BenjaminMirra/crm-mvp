@@ -19,6 +19,7 @@ interface KpiCardProps {
     titulo: string;
     valor: number;
     color?: string;
+    tipo_valor?: "monto" | "unidad";
 }
 
 interface ChartCardProps {
